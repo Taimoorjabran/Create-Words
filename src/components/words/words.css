@@ -1,0 +1,121 @@
+h1 {
+    border-bottom: 15px solid #e0a2a2;
+    text-align: left;
+    font-weight: 900;
+    font-size: 55px;
+    color: red;
+  }
+h1:after {
+    content: '';
+    display: block;
+    border-bottom: 15px solid #ff0008;
+    margin-bottom: -15px;
+    max-width: 999px;
+}
+
+
+img {
+    max-width: 90px;
+    max-height: 90px;
+}
+
+.letters {
+    font-size: 25px;
+    color: red;
+}
+
+.alphabets-cont {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.alphabet {
+    min-width: 64px;
+    min-height: 64px;
+    border: 3px solid red;
+    border-radius: 50%;
+    color: red;
+    margin: 16px;
+    font-size: 28px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+.word-count-cont {
+    display: flex;
+    justify-content: space-between;
+}
+.word {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 50px;
+    border-bottom-style: dashed;
+    border-bottom-width: 2px;
+}
+
+.word-count {
+    font-size: 27px;
+    font-weight: 500;
+    color: aliceblue;
+    background-color: red;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    margin: 50px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        border-bottom: 12px solid #e0a2a2;
+        text-align: left;
+        font-weight: 900;
+        font-size: 45px;
+        color: red;
+    }
+    h1:after {
+        content: '';
+        display: block;
+        border-bottom: 12px solid #ff0008;
+        margin-bottom: -12px;
+        max-width: 300px;
+    }
+    .alphabets-cont {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 480px;
+        justify-content: center;
+    }
+
+    .word-count-cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .word {
+        font-size: 30px;
+        font-weight: 500;
+        margin: 50px;
+        border-bottom-style: dashed;
+        border-bottom-width: 2px;
+    }
+    
+    .word-count {
+        font-size: 27px;
+        font-weight: 500;
+        color: aliceblue;
+        background-color: red;
+        border-radius: 50%;
+        height: 55px;
+        width: 55px;
+        margin: 50px;
+        display: flex; 
+        align-items: center; 
+        justify-content: center;
+    }
+}
